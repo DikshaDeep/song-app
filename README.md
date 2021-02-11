@@ -1,9 +1,8 @@
 This project uses the iTune api to get te list of songs.
 Search the song either by artist | album | song.
 
-<img src='%PUBLIC_URL%/ss-1.png'>
-
 ![Alt text](public/ss-1.png?raw=true "Title")
+![Alt text](public/ss-2.png?raw=true "Title")
 
 ## Requirements to run the project
 npm install or yarn
