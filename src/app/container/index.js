@@ -46,15 +46,15 @@ function CheckContainer () {
     dispatch(ActionCreator.listRequest("latest"))
   }, [dispatch])
 
-  React.useEffect(() => {
-    const firstSong = data.list?.results?.find(song => song.kind === "song");
-    setAudio(firstSong?.previewUrl)
-  }, [data.list])
-
-
+  
+  
   // variable to hold the redux store's list state data
   const data = useSelector(state => state.list);
-
+  
+  // React.useEffect(() => {
+  //   const firstSong = data?.list?.results?.find(song => song.kind === "song");
+  //   setAudio(firstSong?.previewUrl)
+  // }, [data?.list])
   /**
    * This function is used to set the search term inside the term state variable.
    *
@@ -102,7 +102,7 @@ function CheckContainer () {
           {data.error?
           <p>{data.errorMessage}</p> :
           <div>
-          {data.parseListLoaded ? data.list.results.map((result, i) => (
+          {data?.parseListLoaded ? data?.list?.results.map((result, i) => (
             <Card
             key={i}
             seq={i+1}

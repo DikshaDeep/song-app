@@ -36,6 +36,7 @@ const PlayContent = styled.div`
   align-items: center;
   width: 10%;
   justify-content: space-between;
+  cursor: pointer;
 `
 
 const useAudio = url => {  
